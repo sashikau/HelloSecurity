@@ -18,8 +18,8 @@ public class UserManagementConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         InMemoryUserDetailsManager userDetailsService = new InMemoryUserDetailsManager();
-        UserDetails user = User.withUsername("john")
-                .password("12345")
+        UserDetails user = User.withUsername("John")
+                .password("123456")
                 .authorities("read")
                 .build();
         userDetailsService.createUser(user);
